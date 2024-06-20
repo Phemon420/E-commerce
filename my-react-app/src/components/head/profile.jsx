@@ -41,7 +41,7 @@ function Profile({account,setAccount}){
 
     return(
         <>
-            <Typography style={{margintop:2 ,cursor:'pointer'}} onClick={handleClick}>{account}</Typography>
+            <Typography style={{margintop:2 ,cursor:'pointer',color:'black'}} onClick={handleClick}>{account}</Typography>
             <Component
                 anchorEl={open}
                 open={open}
