@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import {Divider,styled,Box,Typography, Button} from '@mui/material';
 import Countdown from 'react-countdown';
+import {Link} from 'react-router-dom';
 
 const Jabra=styled(Box)`
     background:#FDFCFC;
@@ -109,10 +110,12 @@ const Slide =({products,oneliner,timer})=>{
         >{
             products.map(product =>
             <Prod>
-                <Imag src={product.url}/>
-                <Texter style={{fontWeight:600,color:'#212121'}}>{product.title_short}</Texter>
-                <Texter style={{color:'Green'}}>{product.discount}</Texter>
-                <Texter style={{color:'#212121',opacity:0.6}}>{product.tagline}</Texter>
+                <Link to={`product/${product.id}`}>
+                    <Imag src={product.url}/>
+                    <Texter style={{fontWeight:600,color:'#212121'}}>{product.title_short}</Texter>
+                    <Texter style={{color:'Green'}}>{product.discount}</Texter>
+                    <Texter style={{color:'#212121',opacity:0.6}}>{product.tagline}</Texter>
+                </Link>
             </Prod>
             )
         }

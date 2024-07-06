@@ -33,7 +33,6 @@ function Home(){
                 <MidSlide products={products} oneliner="lowest price ever" timer={false}/>
                 <MidSlide products={products} oneliner="lund lelo" timer={true}/>
             </Padder>
-            
         </Fragment>
     )
 }

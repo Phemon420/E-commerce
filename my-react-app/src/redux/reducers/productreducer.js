@@ -11,4 +11,19 @@ const getProductsReducer= (state={products: []},action) => {
     }
 };
 
-export default getProductsReducer;
+const getProductDetailsReducer=(state={product:{}},action)=>{
+    switch(action.type){
+        case actionType.GET_PRODUCT_DETAILS_SUCCESS:
+            return {loading:false,product: action.payload};
+        case actionType.GET_PRODUCT_DETAILS_REQUEST:
+            return {loading:true};
+        case actionType.GET_PRODUCT_DETAILS_FAIL:
+            return {loading:false,product: action.payload};
+        case actionType.GET_PRODUCT_DETAILS_FAIL:
+            return {product: {}};
+        default:
+            return state;
+    }
+}
+
+export  {getProductsReducer,getProductDetailsReducer};

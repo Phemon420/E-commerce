@@ -8,19 +8,28 @@ import { DataContext } from '../../context/dataprovider';
 import Profile from './profile';
 
 
-const WrapItup=styled(Box)`
-    display:flex;
-    margin:0 3% 0 auto;
-    & > button,& > p,& > div{
-        margin-right:40px;
-        font-size:14px;
-        align-items:centre;
+const WrapItup=styled(Box)(({ theme }) => ({
+    display:'flex',
+    margin:'0 3% 0 auto',
+    '& > *':{
+        marginRight:40,
+        fontSize:14,
+        alignItems:'center',
+    },
+    justifyContent: 'flex-end',
+    [theme.breakpoints.down('md')]: {
+        display: 'block'
     }
-    justify-content: flex-end;
-`
-const Container=styled(Box)`
-    display:flex;
-`
+  }));
+    
+
+const Container=styled(Box)(({ theme }) => ({
+    display: 'flex',
+    [theme.breakpoints.down('md')]: {
+        display: 'block'
+    }
+  }));
+
 
 const LoginButton=styled(Button)`
     background:#000;
