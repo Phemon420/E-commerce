@@ -3,16 +3,17 @@ import bodyParser from "body-parser";
 import pg from "pg";
 import {products} from "./data.js";
 
-
 const app = express();
 const port = 3000;
 
 const client = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "flipkart",
-  password: "phemon420",
-  port: 5432,
+  // user: "postgres",
+  // host: "localhost",
+  // database: "flipkart",
+  // password: "phemon420",
+  // port: 5432,
+
+  connectionString: "postgres://default:qm1LGS6vEgYy@ep-crimson-dream-a4d6pmiz-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require?sslmode=require",
 });
 
 client.connect();

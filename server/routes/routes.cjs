@@ -3,11 +3,12 @@ const bodyParser = require('body-parser');
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    database: "flipkart",
-    password: "phemon420",
-    port: 5432,
+    // user: "postgres",
+    // host: "localhost",
+    // database: "flipkart",
+    // password: "phemon420",
+    // port: 5432,
+    connectionString: "postgres://default:qm1LGS6vEgYy@ep-crimson-dream-a4d6pmiz-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require?sslmode=require",
 });
 
 const route = express();
