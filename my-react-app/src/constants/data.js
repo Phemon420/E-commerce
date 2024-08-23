@@ -23,6 +23,8 @@ export const imageURL = [
     'https://rukminim1.flixcart.com/flap/960/960/image/1ce0c4c1fb501b45.jpg?q=50'
 ];
 
+export const flipkartlogo= 'https://th.bing.com/th/id/OIP.wohzUGiqGGXQ-K2igKjJzAHaDk?rs=1&pid=ImgDetMain';
+
 // login/Signup image: https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png
 
 // const timerURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg';

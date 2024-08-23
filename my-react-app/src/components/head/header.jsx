@@ -4,7 +4,7 @@ import Search from './search'
 import CustomButtons from './custombuttons';
 import { Link } from 'react-router-dom';
 import {Menu} from '@mui/icons-material';
-
+import { flipkartlogo } from '../../constants/data';
 const StyleHeader=styled(AppBar)`
   background: #FFFF00;
   height:55px;
@@ -68,7 +68,7 @@ function Header() {
             {list()}
           </Drawer>
           <Styleimage to={`/`}>
-            <img src="../src/assets/flipkart-logo-yellow.png" style={{width:75}}/>
+            <img src={flipkartlogo} style={{width:75}}/>
             <Box>
               <Styleplus >
                 Explore plus
