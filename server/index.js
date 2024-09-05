@@ -6,17 +6,23 @@ import cors from "cors";
 
 const app = express();
 // //const port = 8000;
-const port = process.env.PORT || 8000;
+// const port = process.env.PORT || 8000;
 // console.log(process.env.PORT);
 app.use(cors({
-    origin:"*"
+    origin:[""],
+    methods:["POST","GET","DELETE"],
+    credentials:true
+
 }));
+app.get("/",(req,res)=>{
+    res.json("HELLO");
+})
 app.use('/', getProducts);
 //app.use(cors());
 app.use('/', route);
 app.use('/',getProductsdetail);
 
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server is running on port ${port}`);
+// });
