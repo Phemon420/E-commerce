@@ -12,6 +12,13 @@ const pool = new Pool({
 });
 
 const route = express();
+
+route.use(cors({ 
+  origin: 'https://e-commerce-three-puce-14.vercel.app', // Set your frontend domain
+  methods: 'GET,POST',
+  credentials: true // If you need to include cookies or authentication headers
+}));
+
 route.use(bodyParser.json());
 
 route.post('/signup', async (req, res) => {
