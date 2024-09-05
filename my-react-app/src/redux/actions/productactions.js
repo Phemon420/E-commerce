@@ -1,7 +1,11 @@
 import axios from "axios";
 import * as actionTypes from "../constants/productConstants";
 
-const URL = 'http://localhost:8000';
+ //const URL = 'http://localhost:8000';
+ console.log(import.meta.env)
+// const URL=`https://cors-anywhere.herokuapp.com/${import.meta.env.VITE_REACT_BASELAUNCH_URL}`;
+//const URL=import.meta.env.VITE_REACT_BASE_URL;
+const URL=import.meta.env.VITE_REACT_BASELAUNCH_URL;
 
 export const getProducts = () => async (dispatch) => {
     try {

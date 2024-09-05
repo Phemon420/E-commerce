@@ -16,6 +16,8 @@
     "@mui/material": "^5.15.15",
     "@redux-devtools/extension": "^3.3.0",
     "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "dotenv-webpack": "^8.1.0",
     "react": "^18.2.0",
     "react-countdown": "^2.3.5",
     "react-dom": "^18.2.0",
@@ -24,7 +26,8 @@
     "react-router-dom": "^6.23.1",
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0",
-    "thunk": "^0.0.1"
+    "thunk": "^0.0.1",
+    "vite-plugin-env-compatible": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

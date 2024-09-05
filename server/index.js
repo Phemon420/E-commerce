@@ -5,8 +5,9 @@ import getProductsdetail from "./routes/productdetails.cjs";
 import cors from "cors";
 
 const app = express();
-const port = 8000;
-
+// //const port = 8000;
+const port = process.env.PORT || 8000;
+// console.log(process.env.PORT);
 app.use(cors({
     origin:"*"
 }));

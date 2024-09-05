@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const URL= 'http://localhost:8000';
+//const URL= 'https://localhost:8000';
+const URL=import.meta.env.VITE_REACT_BASELAUNCH_URL;
+
 
 export const signlolup = async (data)=>{
     try{
