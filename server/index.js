@@ -8,12 +8,14 @@ const app = express();
 // //const port = 8000;
 // const port = process.env.PORT || 8000;
 // console.log(process.env.PORT);
-app.use(cors({
-    origin:[""],
-    methods:["POST","GET","DELETE"],
-    credentials:true
+// app.use(cors({
+//     origin:[""],
+//     methods:["POST","GET","DELETE"],
+//     credentials:true
 
-}));
+// }));
+app.use(cors());
+
 app.get("/",(req,res)=>{
     res.json("HELLO");
 })
