@@ -49,7 +49,7 @@ const port = process.env.PORT || 8000;
 
 // Configure CORS to allow the frontend origin
 app.use(cors({
-    origin: ["https://e-commerce-three-puce-14.vercel.app"], // Replace with your frontend URL
+    origin: ["*"], // Replace with your frontend URL
     methods: ["POST", "GET", "DELETE"],
     credentials: true
 }));
